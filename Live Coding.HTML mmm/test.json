@@ -1,0 +1,10 @@
+{
+    "age": 1,
+    "status": false,
+    "money": null,
+    "action": "run""children": [
+        "John",
+        "Jane",
+        "Doe"
+    ]
+}

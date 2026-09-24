@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <metacharset="UTF-8">
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Create Your Account</h1>
+        <form action="/register" method="POST">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br>
+                <p>Gender:</p>
+                <label>
+                    <input type="radio" name="gender" value="m"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="f"> Female
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" minlength="8" required><br>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course">
+                    <option value="html">HTML Fundamentals</option>
+                    <option value="css">CSS Styling</option>
+                </select>
+            </fieldset>
+
+            <label>
+                <input type="checkbox" name="agree" required>
+                I agree to the Terms and Conditions
+            </label><br>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+        </form>
+    </body>
+</html>
+            <!--Local file (VSCode + Live Server) -->
+            <img src="images/profile.jpg"
+                 alt="Profile photo of Amara Okafor"
+                 width="300"
+                 height="300"
+                 loading="lazy">
+                 
+            <!--Public URL (works in both VSCode and CodePen) -->
+            <img src="https://images.unsplash.com/photo-example"
+            alt="A scenic mountain landscape"
+            width="600">
+            <figure>
+                <img src="html-diagram.png"
+                alt="Diagram showing the structure of an HTML document">
+                <figcaption>
+                    Figure 1: The basic structure of an HTML5 document 
+                </figcaption>
+            </figure>
+            <!--In VSCode: local file via Live Server -->
+            <audiocontrols>
+                <sourcesrc="audio/podcast.mp3"type="audio/mpeg">
+                <sourcesrc="audio/podcast.ogg"type="audio/ogg">
+                Your browser does not support HTML audio.
+            </audio>
+            
+            <!--In CodePen: public URL --> 
+            <audiocontrols>
+                <source src="https://example.com/audio/sample.mp3" type="audio/mpeg">
+                Your browser does not support HTML audio.
+            </audio>
+            <audiocontrols>
+                <sourcesrc="audio.mp3"type="audio/mpeg">  <!--Chrome, Firefox, Safari, Edge -->
+                <sourcesrc="audio.ogg"type="audio/ogg">   <!--Firefox fallback -->
+                <sourcesrc="audio.wav"type="audio/wav">   <!--Last resort -->
+              <p>Your browser cannot play this audio.
+                 <ahref="audio.mp3">Download instead</a>.
+              </p>
+            </audio>
+    <!--VSCode + Live Server -->
+    <videocontrols width="640"height="360"poster="images/thumb.jpg">
+        <sourcesrc="video/lecture.mp4"type="video/mp4">
+        <sourcesrc="video/lecture.webm"type="video/webm">
+        Your browser does not support HTML video.
+    </video>
+    
+    <!--CodePen: public video URL -->
+    <videocontrols width="640"poster="https://example.com/thumb.jpg">
+        <source src="https://example.com/video/sample.mp4" type="video/mp4">
+    </video>
+    <!--YouTube embed —copy the embed code from YouTube: -->
+    <!--Share → Embed → Copy the iframe code -->
+    <iframe
+       width="560"
+       height="315"
+       src="https://www.youtube.com/embed/VIDEO_ID"
+       title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+       allowfullscreen>
+    </iframe>
+    <figure>
+        <videocontrols width="600"poster="images/thumb.jpg">
+            <sourcesrc="video/intro.mp4"type="video/mp4">
+            <sourcesrc="video/intro.webm"type="video/webm">
+        </video>
+        <figcaption>Video 1: Introduction to HTML —Module 2</figcaption>
+    </figure>
+
+ <!DOCTYPE html>
+ <htmllang="en">
+    <head>
+        <metacharset="UTF-8">
+        <title>Media Gallery</title>
+        <style>
+            img, video {
+                max-width: 100%;
+                height: auto;
+            }
+            figure {
+                margin: 0 0 2rem 0;
+            }
+            figcaption {
+                color: #555;
+                font-style: italic;
+                margin-top: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TS Academy —Media Gallery</h1>
+
+        <!--Image -->
+        <figure>
+            <img src="images/campus.jpg" alt="TS Academy campus building in Lagos" loading="lazy">
+            <figcaption>Our campus in Lagos</figcaption>
+        </figure>
+
+        <!--Audio -->
+        <h2>Listen to the Lecture</h2>
+        <audio controls>
+            <source src="audio/lecture-1.mp3" type="audio/mpeg">
+            <source src="audio/lecture-1.ogg" type="audio/ogg">
+            <p>Audio not supported. <a href='audio/lecture-1.mp3'>Download</a></p>
+        </audio>
+
+        <!--Video -->
+        <figure>
+            <video controls width="640" poster="images/demo-thumb.jpg">
+                <source src="video/demo.mp4" type="video/mp4">
+                <source src="video/demo.webm" type="video/webm">
+                <p>Video not supported. <a href='video/demo.mp4'>Download</a></p>
+            </video>
